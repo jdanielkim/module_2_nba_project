@@ -384,6 +384,9 @@ After taking out the feature BMI I created. The RMSE is higher, therfore I have 
 
 ### Best Model: Third degree polynomial
 
+### Future uses:
+This model can help coaches have an insight while select players if they are looking to increase scoring abilities in their team. This model helps to see how much a player would score based on their other statstics and can account for which team they play on. We can also use this for betting.  
+
 
 
 
