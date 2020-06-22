@@ -180,7 +180,7 @@ Image(filename= "PTS_GS_bball.png")
 
 
 
-Players with BMI between approximate 23 and 27 generally score the most points per season. 
+Players with BMI between approximatley 23 and 27 generally score the most points per season. 
 
 
 ```python
@@ -232,9 +232,9 @@ Image(filename= "Central_limit.png")
 
 ### ANOVA Test: Test whether there is a statistically significant difference in mean of PTS scored among teams
 
-Ho: The mean of points scored per season between all the teams is the same
+Ho: The mean of points scored per season of all the teams is the same
 
-Ha : The mean of points scored per season between all the teams is not
+Ha : The mean of points scored per season of all the teams is not
 
 P value is 6.419 * 20^-205. Since the P value falls below an alpha of 0.05, we reject the null hypothesis. Therefore, there is a statistically significant difference between the points scored between teams. 
 
@@ -246,13 +246,13 @@ Ha : The mean of points scored per season between all the country is not
 
 P value is 0.922. Since the P value does not fall below an alpha of 0.05, we fail to reject the null hypothesis that there is a statistically significant difference between the points scored between country of origin. 
 
-### Two sample ttest: Do players that played in the 1980's and 1990's  era score more points on average than one's from thhe 2000's?
+### Two sample ttest: Do players that played in the 1980's and 1990's  era score more points on average than one's from the 2000's?
 
 Ho : mu 1900's points less than or equal to mu 2000's points
 
 Ha: mu 1900's points more than mu 2000's points
 
-The t-test pvalue is less than 0.001, therefore it falls below the rejection region of 0.05. We reject the null hypothesis. Thereby, players who played in the 80's and 90's scored more point on average than those in the 2000's.  
+The t-test pvalue is less than 0.001, therefore it falls below the rejection region of 0.05. I reject the null hypothesis. Thereby, players who played in the 80's and 90's scored more point on average than those in the 2000's.  
 
 # What model was best fit?
 
@@ -291,7 +291,7 @@ Testing Mean Squared Error: 222.7346559434921
 Testing Root Mean Squared Error: 14.924297502512207
 
 ### Update in regression
-After viewing these regressions I realized that there might be correlation issues with a few features such as three point attempts, two point attempts, and free throw attempts. Also, conceptually having the metrics of attempts to score can affect the outcome of predicting points scoring. I wanted to initially create a prediction without any statistics related to scoring and found out that having the metrics to attempts to score might hinder my results. Therefore, I decided to drop the variables twoPA', threePA ,FTA because they are strongly related with the actual number of points scored. I wanted to initially create a prediction without any statistics related to scoring and found out that this might hinder my results. I am aware that this will affect my RMSE.
+After viewing these regressions I realized that there might be correlation issues with a few features such as three point attempts, two point attempts, and free throw attempts. Also, conceptually having the metrics of attempts to score can affect the outcome of predicting points scoring. I wanted to initially create a prediction without any statistics related to scoring and found out that having the metrics to attempts to score might hinder my results. Therefore, I decided to drop the variables twoPA', threePA ,FTA because they are strongly related with the actual number of points scored. I wanted to initially create a prediction without any statistics related to scoring and found out that this might hinder my results. I am aware that this will affect my RMSE. I also dropped the dummy variables because they were creating too many features for the regression model to load. 
 
 ### The first model I ran was a linear regression: 
 
